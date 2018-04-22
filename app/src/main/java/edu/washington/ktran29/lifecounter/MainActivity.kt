@@ -65,13 +65,24 @@ class MainActivity : AppCompatActivity() {
         p4Plus5 = p4b1
 
         var lifeArray = arrayOf(p1Life, p2Life, p3Life, p4Life)
+//        var p1Buttons = arrayOf(p1Minus5, p1Minus, p1Plus, p1Plus5)
+//        var p2Buttons = arrayOf(p2Minus5, p2Minus, p2Plus, p2Plus5)
+//        var p3Buttons = arrayOf(p3Minus5, p3Minus, p3Plus, p3Plus5)
+//        var p4Buttons = arrayOf(p4Minus5, p4Minus, p4Plus, p4Plus5)
+//        var buttons = object {
+//            var p1 = p1Buttons
+//            var p2 = p2Buttons
+//            var p3 = p3Buttons
+//            var p4 = p4Buttons
+//        }
 
         for (i in 0 until lifeArray.size - 1) {
-            var health = lifeArray[i]
-            health?.addTextChangedListener(object : TextWatcher {
+            var life = lifeArray[i]
+            life?.addTextChangedListener(object : TextWatcher {
                 override fun afterTextChanged(p0: Editable?) {
-                    if (health?.text.toString().toInt() <= 0) {
-                        Toast.makeText(this@MainActivity, "Player ${i + 1} LOSES!", Toast.LENGTH_LONG).show()
+                    if (life?.text.toString().toInt() <= 0) {
+                        Toast.makeText(this@MainActivity, "Player ${i + 1} LOSES!", Toast.LENGTH_SHORT).show()
+//                        var loserButtons = buttons["p1"]
                     }
                 }
 
@@ -88,8 +99,8 @@ class MainActivity : AppCompatActivity() {
         val direction = tag.substring(5)
         var value = Character.getNumericValue(tag[3])
 
-        Log.i(TAG, "${tag[3]}")
-        Log.i(TAG, "${tag[3].toInt()}")
+//        Log.i(TAG, "${tag[3]}")
+//        Log.i(TAG, "${tag[3].toInt()}")
 
         value = if (direction == "minus") (0 - value) else value
 
@@ -103,7 +114,10 @@ class MainActivity : AppCompatActivity() {
 
     private fun changeLife(life: TextView?, value: Int) {
         val currLife = life?.text.toString().toInt()
-        life?.setText("${currLife + value}")
+        if (currLife != 0) {
+            val newLife = Math.max(0, currLife + value)
+            life?.text = "$newLife"
+        }
     }
 
 

@@ -94,7 +94,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="4dp"
                 android:ems="10"
-                android:text="Player 1"
+                android:hint="Player 1"
                 android:inputType="textPersonName"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -118,6 +118,7 @@
                 android:layout_weight=".2"
                 android:text="@string/minuslife"
                 android:onClick="onClick"
+                android:tag="p2_1_minus"
                 app:layout_constraintStart_toEndOf="@+id/p2b4"
                 app:layout_constraintTop_toBottomOf="@+id/p2name" />
 
@@ -130,6 +131,7 @@
                 android:layout_weight=".2"
                 android:text="@string/lifeminus5"
                 android:onClick="onClick"
+                android:tag="p2_5_minus"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/p2name" />
 
@@ -157,6 +159,7 @@
                 android:layout_weight=".2"
                 android:text="@string/pluslife"
                 android:onClick="onClick"
+                android:tag="p2_1_plus"
                 app:layout_constraintEnd_toStartOf="@+id/p2b1"
                 app:layout_constraintTop_toBottomOf="@+id/p2name" />
 
@@ -169,6 +172,7 @@
                 android:layout_weight=".2"
                 android:text="@string/lifeplus5"
                 android:onClick="onClick"
+                android:tag="p2_5_plus"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/p2name" />
 
@@ -180,7 +184,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="4dp"
                 android:ems="10"
-                android:text="Player 2"
+                android:hint="Player 2"
                 android:inputType="textPersonName"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -204,6 +208,7 @@
                 android:layout_weight=".2"
                 android:text="@string/minuslife"
                 android:onClick="onClick"
+                android:tag="p3_1_minus"
                 app:layout_constraintStart_toEndOf="@+id/p3b4"
                 app:layout_constraintTop_toBottomOf="@+id/p3name" />
 
@@ -216,6 +221,7 @@
                 android:layout_weight=".2"
                 android:text="@string/lifeminus5"
                 android:onClick="onClick"
+                android:tag="p3_5_minus"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/p3name" />
 
@@ -243,6 +249,7 @@
                 android:layout_weight=".2"
                 android:text="@string/pluslife"
                 android:onClick="onClick"
+                android:tag="p3_1_plus"
                 app:layout_constraintEnd_toStartOf="@+id/p3b1"
                 app:layout_constraintTop_toBottomOf="@+id/p3name" />
 
@@ -255,6 +262,7 @@
                 android:layout_weight=".2"
                 android:text="@string/lifeplus5"
                 android:onClick="onClick"
+                android:tag="p3_5_plus"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/p3name" />
 
@@ -266,7 +274,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="4dp"
                 android:ems="10"
-                android:text="Player 3"
+                android:hint="Player 3"
                 android:inputType="textPersonName"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -290,6 +298,7 @@
                 android:layout_weight=".2"
                 android:text="@string/minuslife"
                 android:onClick="onClick"
+                android:tag="p4_1_minus"
                 app:layout_constraintStart_toEndOf="@+id/p4b4"
                 app:layout_constraintTop_toBottomOf="@+id/p4name" />
 
@@ -302,6 +311,7 @@
                 android:layout_weight=".2"
                 android:text="@string/lifeminus5"
                 android:onClick="onClick"
+                android:tag="p4_5_minus"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/p4name" />
 
@@ -329,6 +339,7 @@
                 android:layout_weight=".2"
                 android:text="@string/pluslife"
                 android:onClick="onClick"
+                android:tag="p4_1_plus"
                 app:layout_constraintEnd_toStartOf="@+id/p4b1"
                 app:layout_constraintTop_toBottomOf="@+id/p4name" />
 
@@ -341,6 +352,7 @@
                 android:layout_weight=".2"
                 android:text="@string/lifeplus5"
                 android:onClick="onClick"
+                android:tag="p4_5_plus"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/p4name" />
 
@@ -352,7 +364,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="4dp"
                 android:ems="10"
-                android:text="Player 4"
+                android:hint="Player 4"
                 android:inputType="textPersonName"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
