@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.washington.ktran29.lifecounter.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraintLayout6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp"
+            android:layout_weight=".25"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <Button
+                android:id="@+id/p1b3"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="0dp"
+                android:layout_weight=".2"
+                android:text="@string/minuslife"
+                app:layout_constraintStart_toEndOf="@+id/p1b4"
+                app:layout_constraintTop_toBottomOf="@+id/p1name" />
+
+            <Button
+                android:id="@+id/p1b4"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="0dp"
+                android:layout_weight=".2"
+                android:text="@string/lifeminus5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/p1name" />
+
+            <TextView
+                android:id="@+id/p1life"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="0dp"
+                android:layout_weight=".2"
+                android:gravity="center"
+                android:text="@string/life"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toStartOf="@+id/p1b2"
+                app:layout_constraintStart_toEndOf="@+id/p1b3"
+                app:layout_constraintTop_toBottomOf="@+id/p1name" />
+
+            <Button
+                android:id="@+id/p1b2"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginTop="0dp"
+                android:layout_weight=".2"
+                android:text="@string/pluslife"
+                app:layout_constraintEnd_toStartOf="@+id/p1b1"
+                app:layout_constraintTop_toBottomOf="@+id/p1name" />
+
+            <Button
+                android:id="@+id/p1b1"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginTop="0dp"
+                android:layout_weight=".2"
+                android:text="@string/lifeplus5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/p1name" />
+
+            <EditText
+                android:id="@+id/p1name"
+                android:layout_width="wrap_content"
+                android:layout_height="41dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:ems="10"
+                android:hint="Player 1"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraintLayout7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_weight=".25"
+            app:layout_constraintTop_toBottomOf="@id/constraintLayout6">
+
+            <Button
+                android:id="@+id/p2b3"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="0dp"
+                android:layout_weight=".2"
+                android:text="@string/minuslife"
+                app:layout_constraintStart_toEndOf="@+id/p2b4"
+                app:layout_constraintTop_toBottomOf="@+id/p2name" />
+
+            <Button
+                android:id="@+id/p2b4"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="0dp"
+                android:layout_weight=".2"
+                android:text="@string/lifeminus5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/p2name" />
+
+            <TextView
+                android:id="@+id/p2life"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="0dp"
+                android:layout_weight=".2"
+                android:gravity="center"
+                android:text="@string/life"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toStartOf="@+id/p2b2"
+                app:layout_constraintStart_toEndOf="@+id/p2b3"
+                app:layout_constraintTop_toBottomOf="@+id/p2name" />
+
+            <Button
+                android:id="@+id/p2b2"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginTop="0dp"
+                android:layout_weight=".2"
+                android:text="@string/pluslife"
+                app:layout_constraintEnd_toStartOf="@+id/p2b1"
+                app:layout_constraintTop_toBottomOf="@+id/p2name" />
+
+            <Button
+                android:id="@+id/p2b1"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginTop="0dp"
+                android:layout_weight=".2"
+                android:text="@string/lifeplus5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/p2name" />
+
+            <EditText
+                android:id="@+id/p2name"
+                android:layout_width="wrap_content"
+                android:layout_height="41dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:ems="10"
+                android:hint="Player 2"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraintLayout8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_weight=".25"
+            app:layout_constraintTop_toBottomOf="@id/constraintLayout7">
+
+            <Button
+                android:id="@+id/p3b3"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="0dp"
+                android:layout_weight=".2"
+                android:text="@string/minuslife"
+                app:layout_constraintStart_toEndOf="@+id/p3b4"
+                app:layout_constraintTop_toBottomOf="@+id/p3name" />
+
+            <Button
+                android:id="@+id/p3b4"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="0dp"
+                android:layout_weight=".2"
+                android:text="@string/lifeminus5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/p3name" />
+
+            <TextView
+                android:id="@+id/life1"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="0dp"
+                android:layout_weight=".2"
+                android:gravity="center"
+                android:text="@string/life"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toStartOf="@+id/p3b2"
+                app:layout_constraintStart_toEndOf="@+id/p3b3"
+                app:layout_constraintTop_toBottomOf="@+id/p3name" />
+
+            <Button
+                android:id="@+id/p3b2"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginTop="0dp"
+                android:layout_weight=".2"
+                android:text="@string/pluslife"
+                app:layout_constraintEnd_toStartOf="@+id/p3b1"
+                app:layout_constraintTop_toBottomOf="@+id/p3name" />
+
+            <Button
+                android:id="@+id/p3b1"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginTop="0dp"
+                android:layout_weight=".2"
+                android:text="@string/lifeplus5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/p3name" />
+
+            <EditText
+                android:id="@+id/p3name"
+                android:layout_width="wrap_content"
+                android:layout_height="41dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:ems="10"
+                android:hint="Player 3"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraintLayout9"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_weight=".25"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout8">
+
+            <Button
+                android:id="@+id/p4b3"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="0dp"
+                android:layout_weight=".2"
+                android:text="@string/minuslife"
+                app:layout_constraintStart_toEndOf="@+id/p4b4"
+                app:layout_constraintTop_toBottomOf="@+id/p4name" />
+
+            <Button
+                android:id="@+id/p4b4"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="0dp"
+                android:layout_weight=".2"
+                android:text="@string/lifeminus5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/p4name" />
+
+            <TextView
+                android:id="@+id/p4life"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="0dp"
+                android:layout_weight=".2"
+                android:gravity="center"
+                android:text="@string/life"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toStartOf="@+id/p4b2"
+                app:layout_constraintStart_toEndOf="@+id/p4b3"
+                app:layout_constraintTop_toBottomOf="@+id/p4name" />
+
+            <Button
+                android:id="@+id/p4b2"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginTop="0dp"
+                android:layout_weight=".2"
+                android:text="@string/pluslife"
+                app:layout_constraintEnd_toStartOf="@+id/p4b1"
+                app:layout_constraintTop_toBottomOf="@+id/p4name" />
+
+            <Button
+                android:id="@+id/p4b1"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginTop="0dp"
+                android:layout_weight=".2"
+                android:text="@string/lifeplus5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/p4name" />
+
+            <EditText
+                android:id="@+id/p4name"
+                android:layout_width="wrap_content"
+                android:layout_height="41dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:ems="10"
+                android:hint="Player 4"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
