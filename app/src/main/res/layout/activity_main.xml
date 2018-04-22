@@ -89,10 +89,10 @@
             <EditText
                 android:id="@+id/p1name"
                 android:layout_width="wrap_content"
-                android:layout_height="41dp"
+                android:layout_height="39dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="4dp"
+                android:layout_marginTop="0dp"
                 android:ems="10"
                 android:hint="Player 1"
                 android:inputType="textPersonName"
@@ -105,7 +105,7 @@
             android:id="@+id/constraintLayout7"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="3dp"
             android:layout_weight=".25"
             app:layout_constraintTop_toBottomOf="@id/constraintLayout6">
 
@@ -179,10 +179,10 @@
             <EditText
                 android:id="@+id/p2name"
                 android:layout_width="wrap_content"
-                android:layout_height="41dp"
+                android:layout_height="39dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="4dp"
+                android:layout_marginTop="0dp"
                 android:ems="10"
                 android:hint="Player 2"
                 android:inputType="textPersonName"
@@ -195,7 +195,7 @@
             android:id="@+id/constraintLayout8"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="3dp"
             android:layout_weight=".25"
             app:layout_constraintTop_toBottomOf="@id/constraintLayout7">
 
@@ -269,10 +269,10 @@
             <EditText
                 android:id="@+id/p3name"
                 android:layout_width="wrap_content"
-                android:layout_height="41dp"
+                android:layout_height="39dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="4dp"
+                android:layout_marginTop="0dp"
                 android:ems="10"
                 android:hint="Player 3"
                 android:inputType="textPersonName"
@@ -285,7 +285,7 @@
             android:id="@+id/constraintLayout9"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="3dp"
             android:layout_weight=".25"
             app:layout_constraintTop_toBottomOf="@+id/constraintLayout8">
 
@@ -359,10 +359,10 @@
             <EditText
                 android:id="@+id/p4name"
                 android:layout_width="wrap_content"
-                android:layout_height="41dp"
+                android:layout_height="39dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="4dp"
+                android:layout_marginTop="0dp"
                 android:ems="10"
                 android:hint="Player 4"
                 android:inputType="textPersonName"
